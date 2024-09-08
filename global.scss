@@ -1,0 +1,505 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+
+
+
+//web-styles//------------------------------------------
+
+
+
+
+
+
+header{
+    .title{
+        background-color: gray;
+        width: 100%;
+        height:200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 42px;
+        font-family: "ArchyEDT-Bold", sans-serif;
+    }
+}
+
+
+.container{
+    width: 1800px;
+    margin: 0 auto;
+    margin-top: 108px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 110px;
+
+    .family-card{
+        border: 1px solid black;
+        border-radius:5px ;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        gap: 60px;
+        box-shadow: 0px 5px 20px -4px black;
+
+        h1{
+            font-size: 30px;
+        }
+
+        p{
+            font-size: 20px;
+        }
+
+        .family-images{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            
+            img{
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        .image1{
+            width: 1060px;
+            height: 550px;
+            rotate: 9deg;
+            transition: 1s;
+        }
+
+        .image1:hover{
+            transform: scale(1.1,1.1);
+            transition: 1s;
+        }
+
+        .image2{
+            width: 1060px;
+            height: 550px;
+            rotate: -12deg;
+            transition: 1s;
+        }
+
+        .image2:hover{
+            transform: scale(1.1,1.1);
+            transition: 1s;
+        }
+
+        .image3{
+            width: 1060px;
+            height: 550px;
+            rotate: 15deg;
+            transition: 1s;
+        }
+
+        .image3:hover{
+            transform: scale(1.1,1.1);
+            transition: 1s;
+        }
+
+        .image4{
+            width: 1060px;
+            height: 550px;
+            rotate: -7deg;
+            transition: 1s;
+        }
+
+        .image4:hover{
+            transform: scale(1.1,1.1);
+            transition: 1s;
+        }
+
+        .image5{
+            width: 1060px;
+            height: 550px;
+            rotate: 16deg;
+            transition: 1s;
+        }
+
+        .image5:hover{
+            transform: scale(1.1,1.1);
+            transition: 1s;
+        }
+
+        .image6{
+            width: 1060px;
+            height: 550px;
+            rotate: -14deg;
+            transition: 1s;
+        }
+
+        .image6:hover{
+            transform: scale(1.1,1.1);
+            transition: 1s;
+        }
+    }
+
+    .user-1{
+        display: flex;
+        align-items: center;
+        padding: 50px;
+        border: 1px solid black;
+        border-radius: 7px;
+        gap: 100px;
+        box-shadow: 0px 5px 20px -4px black;
+
+        .user-1-info{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 50px;
+
+            h1{
+                font-size: 30px;
+                text-decoration: underline;
+                font-weight: 700;
+            }
+
+            p{
+                width: 850px;
+                font-size: 24px;
+            }
+        }
+
+        .user-1-img{
+            .image1{
+                width: 229px;
+                height: 229px;
+                margin-bottom: 188px;
+                rotate: 15deg;
+                transition: 1s;
+            }
+
+            .image1:hover{
+                transform: scale(1.1,1.1);
+                transition: 1s;
+            }
+
+            .image2{
+                width: 229px;
+                height: 229px;
+                rotate: -15deg;
+                transition: 1s;
+            }
+
+            .image2:hover{
+                transform: scale(1.1,1.1);
+                transition: 1s;
+            }
+
+            .image3{
+                width: 229px;
+                height: 229px;
+                margin-bottom: 188px;
+                rotate: 12deg;
+                transition: 1s;
+            }
+
+            .image3:hover{
+                transform: scale(1.1,1.1);
+                transition: 1s;
+            }
+        }
+    }
+
+}
+
+
+footer{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    margin-top: 108px;
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+//web-styles-media-responsive//------------------------------------------
+
+
+
+@media(max-width:1850px){
+
+    .container{
+        .family-card{
+            width: 1500px;
+
+            .family-images{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+        
+        .user-1{
+            width: 1600px;
+
+            .user-1-info{
+                gap: 95px;
+            }
+        }
+
+        .user-1-img{
+            height: 650px;
+        }
+    }
+
+}
+
+@media(max-width:1800px){
+    .container{
+        width:1700px
+    }
+}
+
+@media(max-width:1700px){
+    .container{
+        width: 1500px;
+        .family-card{
+            width: 1300px;
+            gap: 100px;
+        }
+
+        .user-1{
+            width: 1390px;
+            .user-1-info{
+                p{
+                    width: 700px;
+                }
+            }
+
+            .user-1-img{
+                width: 490px;
+            }
+        }
+    }
+}
+
+@media(max-width:1500px){
+    .container{
+        width: 1300px;
+        .family-card{
+            width: 1240px;
+            
+            .family-image{
+                width: 1000px;
+            }
+        }
+
+    .user-1{
+        width: 1240px;
+        .user-1-info{
+            p{
+                width: 550px;
+            }
+        }
+
+        .user-1-img{
+            width: 490px;
+        }
+    }
+  }
+}
+
+@media(max-width:1300px){
+    .container{
+        width: 1000px;
+        .family-card{
+            width: 933px;
+            .family-image{
+                width: 800px;
+            }
+        }
+
+        .user-1{
+            width: 797px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .user-1-info{
+                align-items: center;
+                p{
+                    width: 690px;
+                }
+            }
+
+            .user-1-img{
+                width: 695px;
+                height: 450px;
+            }
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .container{
+        width: 700px;
+        .family-card{
+            width: 700px;
+            .family-image{
+                width: 600px;
+            }
+        }
+        .user-1{
+            width: 700px;
+            .user-1-info{
+                p{
+                    width: 598px;
+                }
+            }
+            .user-1-img{
+                width: 598px;
+                height: 400px;
+                .image1{
+                    width: 190px;
+                    height: 190px;
+                }
+                .image2{
+                    width: 190px;
+                    height: 190px;
+                }
+                .image3{
+                    width: 190px;
+                    height: 190px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:800px){
+    .container{
+        width: 450px;
+        .family-card{
+            width: 450px;
+            .family-image{
+                width: 350px;
+            }
+        }
+
+        .user-1{
+            width: 450px;
+            .user-1-info{
+                p{
+                    width: 348px;
+                }
+            }
+            .user-1-img{
+                width: 348px;
+                height: 310px;
+                .image1{
+                    width: 110px;
+                    height: 110px;
+                }
+                .image2{
+                    width: 110px;
+                    height: 110px;
+                }
+                .image3{
+                    width: 110px;
+                    height: 110px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .container{
+        width: 300px;
+        .family-card{
+            width: 300px;
+            .family-image{
+                width: 250px;
+            }
+        }
+        .user-1{
+            width: 300px;
+            .user-1-info{
+                p{
+                    width: 200px;
+                    font-size: 19px;
+                }
+            }
+            .user-1-img{
+                width: 200px;
+                height: 222px;
+                .image1{
+                    width: 200px;
+                    height: 200px;
+                }
+                .image2{
+                    display: none;
+                }
+
+                .image3{
+                    display: none;
+                }
+          }
+        }
+    }
+}
+
